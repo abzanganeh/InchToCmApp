@@ -1,0 +1,54 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.pcc.alizanganeh.feetintocmapp.OutputFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/result_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fifthteen_dp"
+            android:text="@string/result_title"
+            android:textColor="@android:color/background_dark"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/result_cotent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/result_title"
+            android:layout_marginEnd="@dimen/fifthteen_dp"
+            android:layout_marginStart="@dimen/fifthteen_dp"
+            android:background="@android:drawable/editbox_background"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingEnd="@dimen/five_dp"
+                android:textAlignment="textEnd"
+                android:textColor="@android:color/background_dark"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/cm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingStart="@dimen/five_dp"
+                android:text="@string/centimeter"
+                android:textAlignment="textStart"
+                android:textColor="@android:color/background_dark"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,73 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.pcc.alizanganeh.feetintocmapp.InputFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/fifthteen_dp"
+            android:text="@string/height_enter"
+            android:textColor="@android:color/background_dark"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/user_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/feet"
+                android:hint="@string/feet"
+                android:layout_marginStart="@dimen/fifthteen_dp"
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:allowUndo="true"
+                android:background="@android:drawable/editbox_background"
+                android:ems="10"
+                android:inputType="number"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="18sp"
+                />
+
+            <EditText
+                android:id="@+id/inch"
+                android:hint="@string/inches"
+                android:layout_marginEnd="@dimen/fifthteen_dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:allowUndo="true"
+                android:background="@android:drawable/editbox_background"
+                android:ems="10"
+                android:inputType="number"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/calculate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_input"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/fifthteen_dp"
+            android:layout_weight="1"
+            android:text="@string/calculate"
+            android:onClick="calculate"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

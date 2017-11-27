@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">FeetInToCmApp</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="height_enter">Enter your height in feet and Inch(es):</string>
+    <string name="feet">Feet</string>
+    <string name="inches">Inch(es)</string>
+    <string name="calculate">Calculate</string>
+    <string name="result_title">Here is your hieght in Centimeter:</string>
+    <string name="centimeter">cm</string>
+</resources>
